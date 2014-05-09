@@ -72,6 +72,9 @@ $(document).ready(
         -moz-box-shadow: 0 0 2px rgba(0,0,0,0.35) !important;
         box-shadow: 0 0 2px rgba(0,0,0,0.35) !important;
     }
+    #main-nav > ul > li > a::after { padding-left: 0 !important; }
+    #main-nav > ul > li { margin-left: 0 !important; }
+    #main-nav > ul > li:not(:last-of-type) { margin-right: 50px !important; }
 
     span.MathJax { font-weight: 300; }
     .MathJax span[style*="font-family: STIXGeneral-Italic;"][class] {

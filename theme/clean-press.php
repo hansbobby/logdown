@@ -72,9 +72,28 @@ $(document).ready(
         -moz-box-shadow: 0 0 2px rgba(0,0,0,0.35) !important;
         box-shadow: 0 0 2px rgba(0,0,0,0.35) !important;
     }
+    #header h1 {  line-height: 1em; }
     #main-nav > ul > li > a::after { padding-left: 0 !important; }
     #main-nav > ul > li { margin-left: 0 !important; }
     #main-nav > ul > li:not(:last-of-type) { margin-right: 50px !important; }
+
+    body { font-size: 18px; }
+    h5 { font-size: 1em; }
+    @media screen and (max-width: 620px) {
+      h3 { font-size: 20px; }
+      article h2.title { font-size: 36px; }
+    }
+    @media screen and (max-width: 600px) {
+      body { font-size: 18px; }
+      article h2.title { font-size: 24px; }
+      .post .entry-content { margin: auto 40px; }
+    }
+    @media screen and (max-width: 480px) {
+      .post .entry-content { margin: auto; }
+    }
+    @media screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2, screen and (device-width: 768px)) {
+      body{ -webkit-text-size-adjust: 100%; }
+    }
 
     span.MathJax { font-weight: 300; }
     .MathJax span[style*="font-family: STIXGeneral-Italic;"][class] {

@@ -45,6 +45,12 @@ $(document).ready(
     }
 );
 </script>
+
+<style type='text/css'>
+    sup > a[rel='footnote']:before { content: '[' }
+    sup > a[rel='footnote']:after  { content: ']' }
+    sup > a[rel='footnote'] { margin-right: .1em; }
+</style>
 </head>
 
 <body>

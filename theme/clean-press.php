@@ -88,6 +88,12 @@ $(document).ready(
     .MathJax span[style*="font-family: STIXGeneral,"] {
       font-family: "Helvetica Neue", Helvetica, STIXGeneral, 'Hiragino Kaku Gothic Pro', 'Hiragino Sans GB', 'Lantinghei TC', 'Lantinghei SC' !important;
     }
+    .MathJax span[style*="font-family: MathJax_Main;"][class] {
+      font-family: "Helvetica Neue", Helvetica, MathJax_Main, 'Hiragino Kaku Gothic Pro', 'Hiragino Sans GB', 'Lantinghei TC', 'Lantinghei SC' !important;
+    }
+    .MathJax span[style*="font-family: MathJax_Math;"][class] {
+      font-family: "Helvetica Neue", Helvetica, MathJax_Math, 'Hiragino Kaku Gothic Pro', 'Hiragino Sans GB', 'Lantinghei TC', 'Lantinghei SC' !important;
+    }
     .MathJax .mtext span,
     .MathJax .mspace span,
     .MathJax .mn span,

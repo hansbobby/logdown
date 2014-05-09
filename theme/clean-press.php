@@ -50,6 +50,14 @@ $(document).ready(
     sup > a[rel='footnote']:before { content: '[' }
     sup > a[rel='footnote']:after  { content: ']' }
     sup > a[rel='footnote'] { margin-right: .1em; }
+    img {
+        -webkit-border-radius: 0 !important;
+        -moz-border-radius: 0 !important;
+        border-radius: 0 !important;
+        -webkit-box-shadow: 0 0 2px rgba(0,0,0,0.35) !important;
+        -moz-box-shadow: 0 0 2px rgba(0,0,0,0.35) !important;
+        box-shadow: 0 0 2px rgba(0,0,0,0.35) !important;
+    }
 </style>
 </head>
 

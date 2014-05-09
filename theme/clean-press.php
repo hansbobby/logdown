@@ -12,6 +12,20 @@
 
 <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script type='text/x-mathjax-config'>
+MathJax.Hub.Config({
+    "HTML-CSS": { scale: 84 },
+    TeX: {
+        Macros: {
+            phi: '{\\varphi}',
+            epsilon: '{\\varepsilon}'
+            /* [Ref]: http://newsgroups.derkeiler.com/Archive/Comp/comp.text.tex/2009-08/msg00162.html
+             * "\let\old@varepsilon\varepsilon" Better suggestion but need \let
+             */
+        }
+    }
+});
+</script>
 <script type="text/javascript">
 $(document).ready(
     function() {
@@ -57,6 +71,35 @@ $(document).ready(
         -webkit-box-shadow: 0 0 2px rgba(0,0,0,0.35) !important;
         -moz-box-shadow: 0 0 2px rgba(0,0,0,0.35) !important;
         box-shadow: 0 0 2px rgba(0,0,0,0.35) !important;
+    }
+
+    span.MathJax { font-weight: 300; }
+    .MathJax span[style*="font-family: STIXGeneral-Italic;"][class] {
+      font-family: "Helvetica Neue", Helvetica, STIXGeneral-Italic, 'Hiragino Kaku Gothic Pro', 'Hiragino Sans GB', 'Lantinghei TC', 'Lantinghei SC' !important;
+      font-style: italic;
+    }
+    .MathJax span[style*="font-family: STIXGeneral-Regular;"][class] {
+      font-family: "Helvetica Neue", Helvetica, STIXGeneral-Regular, 'Hiragino Kaku Gothic Pro', 'Hiragino Sans GB', 'Lantinghei TC', 'Lantinghei SC' !important;
+    }
+    .MathJax span[style*="font-family: STIXGeneral;"][class],
+    .MathJax span[style*="font-family: STIXGeneral,"] {
+      font-family: "Helvetica Neue", Helvetica, STIXGeneral, 'Hiragino Kaku Gothic Pro', 'Hiragino Sans GB', 'Lantinghei TC', 'Lantinghei SC' !important;
+    }
+    .MathJax .mtext span,
+    .MathJax .mspace span,
+    .MathJax .mn span,
+    .MathJax .mo span,
+    .MathJax .mi span,
+    .MathJax .ms span {
+      font-size: 100% !important;
+    }
+    .MathJax img {
+        -webkit-border-radius: 0 !important;
+        -moz-border-radius: 0 !important;
+        border-radius: 0 !important;
+        -webkit-box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        box-shadow: none !important;
     }
 </style>
 </head>

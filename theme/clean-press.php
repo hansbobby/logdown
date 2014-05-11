@@ -94,6 +94,14 @@ $(document).ready(
     @media screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2, screen and (device-width: 768px)) {
       body{ -webkit-text-size-adjust: 100%; }
     }
+    .post .entry-content,
+    article h2.title {
+      -moz-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      -webkit-transition: all 0.3s ease-out;
+      -ms-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+    }
 
     span.MathJax { font-weight: 300; }
     .MathJax span[style*="font-family: STIXGeneral-Italic;"][class] {
